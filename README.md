@@ -10,6 +10,6 @@ LEARN LIVE
 April 14, 2020
 1:00 - 2:00 pm EDT
 
-Build your First FPS Game Series - Part 2 (Session 1)
+Build your First FPS Game Series - Part 2
 April 16, 2020
 1:00 - 2:00 pm EDT
