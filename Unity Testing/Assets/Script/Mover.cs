@@ -5,9 +5,17 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     public float moveSpeed;
+    public float moveDistance;
+
+
     // Update is called once per frame
     void Update ()
     {
-       transform.position += transform.forward * Time.deltaTime * moveSpeed;
+          transform.position += transform.right * moveSpeed * Time.deltaTime;
+
+            if(transform.position.z >= moveDistance || transform.position.x <= -moveDistance)
+            {
+            moveSpeed = -moveSpeed;
+            }
     }
 }
