@@ -8,6 +8,6 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-       transform.position += new Vector3(0.1f,0.1f,0.1f);
+       transform.position += Vector3.one * Time.deltaTime;
     }
 }
