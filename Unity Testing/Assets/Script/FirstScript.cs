@@ -15,11 +15,19 @@ public class FirstScript : MonoBehaviour
         bool canMove = true;
 
         health += 20;
-        moveSpeed -= 1.0;
+        moveSpeed -= 1.0f;
 
-        if(health == 50)
+        if(location == "Australia")
         {
-            Debug.Log("Condition is true.")
+            Debug.Log("Condition is true.");
+        }
+        else if (location == "America")
+        {
+
+        }
+        else
+        {
+            //codetest
         }
     }
 
