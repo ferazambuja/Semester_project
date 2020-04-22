@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-
+    public float moveSpeed;
     // Update is called once per frame
     void Update ()
     {
-       transform.position += Vector3.one * Time.deltaTime;
+       transform.position += Vector3.one * Time.deltaTime * moveSpeed;
     }
 }
