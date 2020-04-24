@@ -50,10 +50,20 @@ public class PlayerController : MonoBehaviour
     // called when we press the "jump" button
     void TryJump ()
     {
-        // create ray pointing downwards from the player
-        Ray ray = new Ray(transform.position, Vector3.down);
+        // create 4 ray pointing downwards from the player on each corner of the cube
+        Ray ray1 = new Ray(transform.position + new Vector3(0.5f, 0, 0.5f), Vector3.down);
+        Ray ray2 = new Ray(transform.position + new Vector3(-0.5f, 0, 0.5f), Vector3.down);
+        Ray ray3 = new Ray(transform.position + new Vector3(0.5f, 0, -0.5f), Vector3.down);
+        Ray ray4 = new Ray(transform.position + new Vector3(-0.5f, 0, -0.5f), Vector3.down);
 
-        if(Physics.Raycast(ray, 0.7f))
+        // shoot those rays
+        bool cast1 = Physics.Raycast(ray1, 0.7f);
+        bool cast2 = Physics.Raycast(ray2, 0.7f);
+        bool cast3 = Physics.Raycast(ray3, 0.7f);
+        bool cast4 = Physics.Raycast(ray4, 0.7f);
+
+        // shoot the raycast
+        if(cast1 || cast2 || cast3 || cast4)
         {
             // add force upwards
             rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
