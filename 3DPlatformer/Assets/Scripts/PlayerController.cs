@@ -77,6 +77,11 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
+        // did we hit a coin?
+        else if(other.CompareTag("Coin"))
+        {
+            //add score
+            Destroy(other.gameObject);
+        }
     }
 }
