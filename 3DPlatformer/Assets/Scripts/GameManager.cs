@@ -12,8 +12,16 @@ public class GameManager : MonoBehaviour
 
     void Awake ()
     {
-        instance = this;
-        
+         if(instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            //avoid to erase the score between levels
+            DontDestroyOnLoad(gameObject);
+        }
     }
     public void AddScore (int scoreToGive)
     {

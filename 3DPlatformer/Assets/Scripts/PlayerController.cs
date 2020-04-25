@@ -79,7 +79,6 @@ public class PlayerController : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             GameManager.instance.GameOver();
-            
         }
         // did we hit a coin?
         else if(other.CompareTag("Coin"))
@@ -87,6 +86,11 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.AddScore(1);
             Destroy(other.gameObject);
             audioSource.Play();
+        }
+        //did we hit a goal?
+        else if(other.CompareTag("Goal"))
+        {
+            GameManager.instance.LevelEnd();
         }
     }
 }
