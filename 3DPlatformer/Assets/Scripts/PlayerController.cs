@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
-    private Rigidbody rig;
+     private Rigidbody rig;
+
+    private AudioSource audioSource;
 
     void Awake() 
     {
         //get the rigidbody component
-        rig = GetComponent<Rigidbody>();    
+        rig = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();    
     }
 
     void Update() 
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
         {
             //add score
             Destroy(other.gameObject);
+            audioSource.Play();
         }
     }
 }
