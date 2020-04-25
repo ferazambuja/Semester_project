@@ -78,12 +78,13 @@ public class PlayerController : MonoBehaviour
         // did we hit an enemy?
         if(other.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.instance.GameOver();
+            
         }
         // did we hit a coin?
         else if(other.CompareTag("Coin"))
         {
-            //add score
+            GameManager.instance.AddScore(1);
             Destroy(other.gameObject);
             audioSource.Play();
         }
