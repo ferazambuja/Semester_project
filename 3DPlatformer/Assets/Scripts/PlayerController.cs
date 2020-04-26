@@ -8,30 +8,35 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
-     private Rigidbody rig;
-
+    private Rigidbody rig;
     private AudioSource audioSource;
 
-    void Awake() 
+    void Awake ()
     {
-        //get the rigidbody component
+        // get the components
         rig = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();    
+        audioSource = GetComponent<AudioSource>();
+
+        Time.timeScale = 1.0f;
     }
 
-    void Update() 
+    void Update ()
     {
-        Move(); 
+        if(GameManager.instance.paused)
+            return;
+
+        Move();
 
         // did we press down the "jump" button?
         if(Input.GetButtonDown("Jump"))
         {
             TryJump();
-        }           
+        }
     }
+
     void Move ()
     {
-        //getting our inputs
+        // getting our inputs
         float xInput = Input.GetAxis("Horizontal");
         float zInput = Input.GetAxis("Vertical");
 
@@ -51,6 +56,7 @@ public class PlayerController : MonoBehaviour
             transform.forward = facingDir;
         }
     }
+
     // called when we press the "jump" button
     void TryJump ()
     {
@@ -73,7 +79,8 @@ public class PlayerController : MonoBehaviour
             rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
-        void OnTriggerEnter (Collider other)
+
+    void OnTriggerEnter (Collider other)
     {
         // did we hit an enemy?
         if(other.CompareTag("Enemy"))
@@ -87,7 +94,7 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             audioSource.Play();
         }
-        //did we hit a goal?
+        // did we hit a goal?
         else if(other.CompareTag("Goal"))
         {
             GameManager.instance.LevelEnd();
