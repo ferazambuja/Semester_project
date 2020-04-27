@@ -1504,6 +1504,36 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
+--- !u!1 &461917014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461917015}
+  m_Layer: 0
+  m_Name: GrabPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461917015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461917014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1934841396}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481325881
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,7 +3388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1148777017
 Transform:
   m_ObjectHideFlags: 0
@@ -5236,6 +5266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig Tracked Controllers
       objectReference: {fileID: 0}
+    - target: {fileID: 3839977344141895644, guid: 6523689a18c21a44888ffeff6a7db8ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3839977344141895645, guid: 6523689a18c21a44888ffeff6a7db8ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5379,7 +5414,50 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1837138948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1934841396
+--- !u!4 &1934841396 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3839977344753880515, guid: 6523689a18c21a44888ffeff6a7db8ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837138948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1934841397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 171853649374691627, guid: 6523689a18c21a44888ffeff6a7db8ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837138948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934841395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efba1c038339fce438cf116c88fa7111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1934841398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934841395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9deb1c33fe89f4a2da8658ed9735d3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1934841399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934841395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be27eee57fb544108a9d6c486e01f1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabPosition: {fileID: 461917014}
+--- !u!114 &1934841400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5407,33 +5485,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1934841399}
+        m_MethodName: Grip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnRelease:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1934841397 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 171853649374691627, guid: 6523689a18c21a44888ffeff6a7db8ef,
-    type: 3}
-  m_PrefabInstance: {fileID: 1837138948}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934841395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efba1c038339fce438cf116c88fa7111, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1934841398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934841395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9deb1c33fe89f4a2da8658ed9735d3c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls:
+      - m_Target: {fileID: 1934841399}
+        m_MethodName: Release
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1982501828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5482,7 +5558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackingSpace: 0
-  m_StationaryCameraYOffset: 1.6
+  m_StationaryCameraYOffset: 1.8
   m_CameraFloorOffsetObject: {fileID: 1982501828}
 --- !u!1001 &2076921497
 PrefabInstance:

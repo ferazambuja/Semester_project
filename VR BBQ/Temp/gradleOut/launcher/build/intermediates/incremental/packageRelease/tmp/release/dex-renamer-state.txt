@@ -1,0 +1,4 @@
+#Sun Apr 26 19:51:00 EDT 2020
+base.0=/Users/fernandovoltolinideazambuja/Documents/2020/IMGS.624.01 - Interactive Virtual Env/github/Semester Project/Semester_project/VR BBQ/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
