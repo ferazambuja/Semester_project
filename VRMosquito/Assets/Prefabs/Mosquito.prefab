@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d909940c5f641d68d97a4b143e0dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.5
+  minDistance: 0.55
 --- !u!54 &391004899227791625
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -87,7 +89,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1001 &2454995935820265490
 PrefabInstance:
   m_ObjectHideFlags: 0
