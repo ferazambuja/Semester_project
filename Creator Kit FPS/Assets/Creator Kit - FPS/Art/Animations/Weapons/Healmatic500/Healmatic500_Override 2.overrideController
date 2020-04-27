@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Healmatic500_Override
+  m_Name: Healmatic500_Override 2
   m_Controller: {fileID: 9100000, guid: 659a9017b97a1874b8730efcab9dfc39, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: f4c2425b3a0a77d44b285898195bd701, type: 2}

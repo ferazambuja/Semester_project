@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Creator Kit - FPS/Scenes/MyScene.unity
+- path: Assets/Creator Kit - FPS/Scenes/ExampleScene 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

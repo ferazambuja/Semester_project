@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 880ce497bcca40d4888f2e28f1ef0400, type: 3}
-  m_Name: RoomGroup
+  m_Name: RoomGroup 2
   m_EditorClassIdentifier: 
   levelPart:
   - {fileID: 4905082054223780149, guid: b79abcb9ee326264694320b336aa66c6, type: 3}

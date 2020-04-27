@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb8b1b9c80db01842adf30a00b5945e1, type: 3}
-  m_Name: GameDatabase
+  m_Name: GameDatabase 2
   m_EditorClassIdentifier: 
   ammoDatabase:
     maxId: 4

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0810e87d9b9c44009e7af003b7a89b4, type: 3}
-  m_Name: SkullRoomBlue 1
+  m_Name: SkullRoomBlue 1 2
   m_EditorClassIdentifier: 
   gradient:
     serializedVersion: 2
@@ -62,6 +62,7 @@ Texture2D:
   m_TextureFormat: 5
   m_MipCount: 7
   m_IsReadable: 1
+  m_IgnoreMasterTextureLimit: 0
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0

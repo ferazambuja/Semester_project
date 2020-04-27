@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AcidParticle
+  m_Name: AcidParticle 2
   m_Shader: {fileID: 4800000, guid: f6727f0d9d4c78f4099af3778ab2567c, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _CUTOUT_ON
   m_LightmapFlags: 0

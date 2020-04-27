@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 6538020fea1cb4ccb8d0b69e4b482616
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sarpanch Black
+  fontNames:
+  - Sarpanch Black
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2619589388a902b4cbd6a0f395f3227e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

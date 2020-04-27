@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GermOBlaster_Override
+  m_Name: GermOBlaster_Override 2
   m_Controller: {fileID: 9100000, guid: 659a9017b97a1874b8730efcab9dfc39, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 7ec2159ff41c4d347ae9b3be659fbd8f, type: 2}

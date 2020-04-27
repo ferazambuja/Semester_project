@@ -19,7 +19,7 @@ public class TreeController : MonoBehaviour
         float scale = Random.Range(minScale, maxScale);
 
         // change scale
-        //transform.localScale *= scale;
+        transform.localScale *= scale;
 
         // random rotation value
         float rotationY = Random.Range(0, 360);
