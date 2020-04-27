@@ -5,6 +5,7 @@ using UnityEngine;
 namespace ZenvaVR
 {
     public class DragCamera : MonoBehaviour {
+        //avoids to be build with the game, checks if is running on the unity editor
         #if UNITY_EDITOR
 
         // flag to keep track whether we are dragging or not
